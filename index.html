@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>QR Code Generator</title>
+    
+<body>
+    <div id="qrcode-container">
+        <h1>QR CODE GENERATOR</h1>
+        <div class="qrcodeInput-cont">
+            <input type="text" class="qr-input" size="30" placeholder="Enter the URL">
+            <select id="size">
+                <option value="100">100 * 100</option>
+            <option value="200">200 * 200</option>
+            <option value="300">256 * 256</option>
+            <option value="400">400 * 400</option>
+            <option value="500">500 * 500</option>
+            <option value="600">600 * 600</option>
+            <option value="700">700 * 700</option>
+            <option value="800">800 * 800</option>
+            <option value="900">900 * 900</option>
+            <option value="1000">1000 * 1000</option>
+            </select>
+            
+            <button class="qrcode-btn">QR-CODE Generator</button>
+        </div>
+        
+        <div id="Qr_Code">
+
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="custom.js"></script>
+    <!-- <script>
+    new QRCode(document.getElementById("Qr_Code"),"https://bhavnajain1997.github.io/Portfolio-Bhavna/")
+    </script> -->
+    
+</body>
+</html>
